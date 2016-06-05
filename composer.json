@@ -1,0 +1,23 @@
+{
+    "name": "fernandopetry/pwork",
+    "description": "Pequenos códigos de auxilio ao meu desenvolvimento",
+    "keywords": ["pwork", "petry", "psr-4"],
+    "homepage": "https://github.com/fernandopetry/pwork",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fernando Petry",
+            "email": "fernandosouza2@gmail.com",
+            "homepage": "http://www.fernandopetry.com.br"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "phpmailer/phpmailer":"5.2.*"
+    },
+    "autoload": {
+        "psr-4": {"PWork\\": "src/PWork"},
+        "psr-4": {"Ckeditor\\": "src/Ckeditor"}
+    }
+}
