@@ -1,6 +1,6 @@
 <?php
 
-namespace Ckeditor;
+namespace PWork\Ckeditor;
 
 /**
  *         

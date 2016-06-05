@@ -8,7 +8,7 @@
     "authors": [
         {
             "name": "Fernando Petry",
-            "email": "fernandosouza2@gmail.com",
+            "email": "fernandopetry@outlook.com",
             "homepage": "http://www.fernandopetry.com.br"
         }
     ],
@@ -17,7 +17,6 @@
         "phpmailer/phpmailer":"5.2.*"
     },
     "autoload": {
-        "psr-4": {"PWork\\": "src/PWork"},
-        "psr-4": {"Ckeditor\\": "src/Ckeditor"}
+        "psr-4": {"PWork\\": "src/PWork"}
     }
 }
