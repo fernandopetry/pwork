@@ -18,7 +18,8 @@ namespace PWork\Util;
  *     
  *     @author Fernando Petry <fernandopetry@live.com>                                                  
  */
-class DateTime {
+class DateTime
+{
 
     static $timezone = 'America/Sao_Paulo';
 
@@ -28,9 +29,10 @@ class DateTime {
      * @param type $format Opcional, formato de retorno no padrão PHP
      * @return string
      */
-    public static function dateTimeTransformBRforEUA($datetime, $format = 'Y-m-d H:i:s') {
+    public static function dateTimeTransformBRforEUA($datetime, $format = 'Y-m-d H:i:s')
+    {
         $date = new \DateTime(str_replace('/', '-', $datetime));
-        $date->setTimezone(new \DateTimeZone(self::$timezone));
+//        $date->setTimezone(new \DateTimeZone(self::$timezone));
         return $date->format($format);
     }
 
@@ -40,9 +42,10 @@ class DateTime {
      * @param string $format Opcional, formato de retorno no padrão PHP
      * @return string
      */
-    public static function dateTimeTransformEUAforBR($datetime, $format = 'd/m/Y H:i:s') {
+    public static function dateTimeTransformEUAforBR($datetime, $format = 'd/m/Y H:i:s')
+    {
         $date = new \DateTime($datetime);
-        $date->setTimezone(new \DateTimeZone(self::$timezone));
+//        $date->setTimezone(new \DateTimeZone(self::$timezone));
         return $date->format($format);
     }
 

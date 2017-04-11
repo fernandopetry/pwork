@@ -5,6 +5,8 @@
     "homepage": "https://github.com/fernandopetry/pwork",
     "type": "library",
     "license": "MIT",
+    "version": "1.0.2",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Fernando Petry",
@@ -14,9 +16,19 @@
     ],
     "require": {
         "php": ">=5.5",
-        "phpmailer/phpmailer":"5.2.*"
+        "phpmailer/phpmailer":"5.2.*",
+        "swiftmailer/swiftmailer": "^5.4"
     },
     "autoload": {
         "psr-4": {"PWork\\": "src/PWork"}
-    }
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "authors": [
+        {
+            "name": "Fernando Petry",
+            "email": "fernando@ideia.ppg.br"
+        }
+    ]
 }
